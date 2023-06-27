@@ -12,7 +12,26 @@
     <title></title>
 </head>
 <body>
-    <heaer class="header">
+    <div class="header__phoneBlock">
+        <a href="tel:8 920 706 17 15">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                <path id="Vector" d="M10.395 8.06556C9.64333 8.06556 8.91611 7.94333 8.23778 7.72333C8.02389 7.65 7.78556 7.705 7.62056 7.87L6.66111 9.07389C4.93167 8.24889 3.31222 6.69056 2.45056 4.9L3.64222 3.88556C3.80722 3.71444 3.85611 3.47611 3.78889 3.26222C3.56278 2.58389 3.44667 1.85667 3.44667 1.105C3.44667 0.775 3.17167 0.5 2.84167 0.5H0.727222C0.397222 0.5 0 0.646667 0 1.105C0 6.78222 4.72389 11.5 10.395 11.5C10.8289 11.5 11 11.115 11 10.7789V8.67056C11 8.34056 10.725 8.06556 10.395 8.06556Z" fill="#C18E41"/>
+            </svg>
+            8 920 706 17 15
+        </a>
+        <a href="tel:8 920 706 17 15">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                <path id="Vector" d="M10.395 8.06556C9.64333 8.06556 8.91611 7.94333 8.23778 7.72333C8.02389 7.65 7.78556 7.705 7.62056 7.87L6.66111 9.07389C4.93167 8.24889 3.31222 6.69056 2.45056 4.9L3.64222 3.88556C3.80722 3.71444 3.85611 3.47611 3.78889 3.26222C3.56278 2.58389 3.44667 1.85667 3.44667 1.105C3.44667 0.775 3.17167 0.5 2.84167 0.5H0.727222C0.397222 0.5 0 0.646667 0 1.105C0 6.78222 4.72389 11.5 10.395 11.5C10.8289 11.5 11 11.115 11 10.7789V8.67056C11 8.34056 10.725 8.06556 10.395 8.06556Z" fill="#C18E41"/>
+            </svg>
+            8 920 706 17 15
+        </a>
+    </div>
+    <header class="header">
+        <button class="header__close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10" fill="none">
+                <path id="Vector" d="M5.00005 3.56352L8.71255 0.0406494L9.77305 1.04698L6.06055 4.56985L9.77305 8.09271L8.71255 9.09904L5.00005 5.57617L1.28755 9.09904L0.227051 8.09271L3.93955 4.56985L0.227051 1.04698L1.28755 0.0406494L5.00005 3.56352Z" fill="#B3B3B3"/>
+            </svg>
+        </button>
         <div class="header__top">
             <div class="container">
                 <div class="header__right">
@@ -41,9 +60,23 @@
         <div class="header__bottom">
             <div class="container">
                 <div class="header__box">
+                    <button class="header__burgir">
+                        <span></span><span></span><span></span>
+                    </button>
                     <a href="#" class="header__logo">
                         <img src="img/logo.svg" alt="">
                     </a>
+                    <div class="header__phoneMobile">
+                        <button class="btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="12" viewBox="0 0 11 12" fill="none">
+                                <path id="Vector" d="M10.395 8.06556C9.64333 8.06556 8.91611 7.94333 8.23778 7.72333C8.02389 7.65 7.78556 7.705 7.62056 7.87L6.66111 9.07389C4.93167 8.24889 3.31222 6.69056 2.45056 4.9L3.64222 3.88556C3.80722 3.71444 3.85611 3.47611 3.78889 3.26222C3.56278 2.58389 3.44667 1.85667 3.44667 1.105C3.44667 0.775 3.17167 0.5 2.84167 0.5H0.727222C0.397222 0.5 0 0.646667 0 1.105C0 6.78222 4.72389 11.5 10.395 11.5C10.8289 11.5 11 11.115 11 10.7789V8.67056C11 8.34056 10.725 8.06556 10.395 8.06556Z" fill="#C18E41"/>
+                            </svg>
+                            8 920 706 17 15
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="6" viewBox="0 0 10 6" fill="none">
+                                <path id="Vector" d="M5 3.77661L8.88906 0.153198L10 1.18825L5 5.84672L0 1.18825L1.11094 0.153198L5 3.77661Z" fill="#3D3D3D"/>
+                            </svg>
+                        </button>
+                    </div>
                     <div class="header__navbar">
                         <ul>
                             <li>
@@ -199,7 +232,7 @@
                 </div>
             </div>
         </div>
-    </heaer>
+    </header>
     <main class="main">
         <section class="banner">
             <div class="container">
@@ -275,7 +308,7 @@
                 </div>
                 <div class="news__slider">
                     <div class="news__wrap">
-                        <div class="news__block">
+                        <a href="#" class="news__block">
                             <div class="news__img">
                                 <img src="img/news-1.png" alt="">
                             </div>
@@ -283,10 +316,10 @@
                                 <span class="news__date">26 Апреля 2022</span>
                                 <p>С 21 по 25 ноября в Москве прошла выставка "Мебель 2022" в ЦВК "Экспоцентр"</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="news__wrap">
-                        <div class="news__block">
+                        <a href="#" class="news__block">
                             <div class="news__img">
                                 <img src="img/news-2.png" alt="">
                             </div>
@@ -294,10 +327,10 @@
                                 <span class="news__date">26 Апреля 2022</span>
                                 <p>С 9 по 12 октября в Москве в 15-й раз прошла выставка Salone del Mobile. Milano Moscow.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="news__wrap">
-                        <div class="news__block">
+                        <a href="#" class="news__block">
                             <div class="news__img">
                                 <img src="img/news-3.png" alt="">
                             </div>
@@ -305,10 +338,10 @@
                                 <span class="news__date">26 Апреля 2022</span>
                                 <p>С 17 по 22 апреля в Милане прошла международная выставка Salone del Mobile</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="news__wrap">
-                        <div class="news__block">
+                        <a href="#" class="news__block">
                             <div class="news__img">
                                 <img src="img/news-2.png" alt="">
                             </div>
@@ -316,7 +349,7 @@
                                 <span class="news__date">26 Апреля 2022</span>
                                 <p>С 9 по 12 октября в Москве в 15-й раз прошла выставка Salone del Mobile. Milano Moscow.</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -382,17 +415,37 @@
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
-        $('.news__slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1
-        });
+        
         $('.categories__slider').slick({
             dots: true,
             infinite: true,
+            arrows: true,
             speed: 500,
-            variableWidth: true
+            variableWidth: true,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    arrows: false,
+                }
+                }
+            ]
         });
+        if (window.innerWidth < 1024) {
+            $('.news__slider').slick({
+                dots: false,
+                infinite: true,
+                arrows: false,
+                speed: 500,
+                variableWidth: true,
+            });
+        } else {
+            $('.news__slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            });
+        }
     </script>
 </body>
 </html>
