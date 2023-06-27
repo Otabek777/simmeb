@@ -12,3 +12,10 @@ $(".header__phoneMobile .btn").click(function() {
         $(".header__phoneBlock").addClass("open");
     }, 10);
 });
+
+$(".filter__mobileBtnOpen").click(function() {
+    $(".filter").addClass("open");
+});
+$(".filter__mobileBtnClose").click(function() {
+    $(".filter").removeClass("open");
+});

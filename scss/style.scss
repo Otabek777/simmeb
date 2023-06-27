@@ -1192,11 +1192,73 @@ h6 {
 .header__phoneMobile {
     display: none;
 }
+.header__phoneBlock {
+    display: none;
+}
+.filter__mobileBtnOpen {
+    display: none;
+    font-weight: 400;
+    padding: 15px;
+    svg {
+        margin-left: 10px;
+    }
+}
+.filter__mobileBtnClose {
+    display: none;
+    font-weight: 400;
+    padding: 15px;
+    svg {
+        margin-left: 10px;
+    }
+}
 
 // Media
 @media screen and (max-width: 1024px) {
-    section {
+    .container {
+        max-width: 700px;
+    }
+    .filter__mobileBtnOpen {
+        display: flex;
+        width: 100%;
+    }
+    .filter__mobileBtnClose {
+        width: 100%;
+        margin-top: 26px;
+    }
+    .filter.open {
+        .filter__wrap {
+            display: block;
+        }
+        .filter__mobileBtnOpen {
+            display: none;
+        }
+        .filter__mobileBtnClose {
+            display: flex;
+        }
+    }
+    .filter__wrap {
         display: none;
+        padding-bottom: 0;
+        border: 0;
+    }
+    .filter__box {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .filter__select {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+    .filter__box2 {
+        flex-direction: column;
+    }
+    .filter__check {
+        margin: 0;
+        margin-bottom: 16px;
+    }
+    .filter__clear {
+        margin: 0 auto;
+        margin-top: 10px;
     }
     .header__phoneMobile {
         display: block;
@@ -1648,11 +1710,15 @@ h6 {
     .contacts__form .about_company__input input {
         border-color: #C5AC86;
     }
-    .filter {
-        display: none;
-    }
     .offices {
         display: block;
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        h2 {
+            order: -1;
+        }
     }
     .aside_catalog {
         display: none;
@@ -1667,6 +1733,13 @@ h6 {
     }
     .products {
         display: block;
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        h2 {
+            order: -1;
+        }
     }
     .products h2 {
         text-align: start;
@@ -1749,5 +1822,19 @@ h6 {
     }
     .product__characteristics li {
         align-items: flex-end;
+    }
+}
+@media screen and (max-width: 360px) {
+    .header__logo {
+        width: 90px;
+    }
+    .header__phoneMobile .btn {
+        font-size: 12px;
+        svg {
+            margin: 0 4px;
+        }
+    }
+    .header__burgir {
+        margin-right: 8px;
     }
 }
