@@ -877,16 +877,21 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: #F6D7A7;
   margin-top: 100px;
+  position: relative;
 }
 .about_company__form .img {
-  max-width: 605px;
-  width: 100%;
-  height: 500px;
-  position: relative;
+  width: calc(100% - 595px);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   overflow: hidden;
 }
 .about_company__form .img img {
@@ -1526,6 +1531,27 @@ h6 {
   margin-left: 10px;
 }
 
+@media screen and (max-width: 1830px) {
+  .categories__wrap {
+    max-width: 500px;
+    min-height: auto;
+  }
+  .categories__slider {
+    top: auto;
+    bottom: 0;
+  }
+  .categories .container {
+    padding-bottom: 800px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .product__image {
+    max-width: 550px;
+  }
+  .product__content {
+    max-width: calc(100% - 580px);
+  }
+}
 @media screen and (max-width: 1024px) {
   .container {
     max-width: 700px;
@@ -1872,9 +1898,6 @@ h6 {
   .categories h2 {
     margin-bottom: 8px;
   }
-  .categories__wrap {
-    min-height: auto;
-  }
   .categories__wrap .btn2 {
     position: absolute;
     bottom: 44px;
@@ -2026,7 +2049,9 @@ h6 {
     width: 100%;
   }
   .about_company__form .img {
+    width: 100%;
     height: 217px;
+    position: relative;
   }
   .about_company__form .img img {
     width: 100%;
@@ -2105,6 +2130,7 @@ h6 {
             order: -1;
   }
   .aside_catalog {
+    display: none;
     max-width: 100%;
     background: #145350;
     padding: 14px 16px 40px 16px;
@@ -2158,8 +2184,8 @@ h6 {
     min-height: 118px;
   }
   .products__img img {
-    width: auto;
-    height: 100%;
+    width: 110%;
+    height: auto;
   }
   .products__content {
     padding: 10px 8px;
@@ -2190,7 +2216,11 @@ h6 {
         -ms-flex-order: -2;
             order: -2;
   }
+  .product__image {
+    max-width: 100%;
+  }
   .product__content {
+    max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
