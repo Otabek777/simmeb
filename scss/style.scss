@@ -1021,6 +1021,7 @@ h6 {
     }
 }
 .product__tabBlock {
+    display: none;
     h5 {
         color: var(--text-black, #161616);
         font-size: 20px;
@@ -1036,6 +1037,13 @@ h6 {
             font-weight: 600;
         }
     }
+    .wrap {
+        max-width: 600px;
+        width: 100%;
+    }
+}
+.product__tabBlock.active {
+    display: block;
 }
 
 .product__characteristics {
@@ -1930,10 +1938,13 @@ h6 {
             }
         }
         .btn.active {
+            display: flex;
             color: var(--text-black, #161616);
             border: 1px solid var(--text-black, #161616);
         }
-        .btn:nth-child(1) {
+    }
+    .product__tabBtn.open {
+        .btn {
             display: flex;
         }
     }

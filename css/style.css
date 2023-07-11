@@ -1224,6 +1224,9 @@ h6 {
   border: 1px solid #D1BEAB;
 }
 
+.product__tabBlock {
+  display: none;
+}
 .product__tabBlock h5 {
   color: var(--text-black, #161616);
   font-size: 20px;
@@ -1238,6 +1241,14 @@ h6 {
 }
 .product__tabBlock p span {
   font-weight: 600;
+}
+.product__tabBlock .wrap {
+  max-width: 600px;
+  width: 100%;
+}
+
+.product__tabBlock.active {
+  display: block;
 }
 
 .product__characteristics {
@@ -2279,10 +2290,13 @@ h6 {
     margin-left: 10px;
   }
   .product__tabBtn .btn.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     color: var(--text-black, #161616);
     border: 1px solid var(--text-black, #161616);
   }
-  .product__tabBtn .btn:nth-child(1) {
+  .product__tabBtn.open .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
